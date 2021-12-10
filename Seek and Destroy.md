@@ -13,3 +13,14 @@ function destroyer(arr) {
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ```
+### Solution
+
+```javascript
+function destroyer(arr) {
+  let args = [...arguments].slice(1)
+  return arr.filter((val) => !args.includes(val))
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3); // returns [1,1]
+destroyer(["tree", "hamburger", 53], "tree", 53); // returns ["hamburger"]
+```
