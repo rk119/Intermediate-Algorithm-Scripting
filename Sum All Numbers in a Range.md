@@ -6,20 +6,24 @@ For example, sumAll([4,1]) should return 10 because sum of all the numbers betwe
 
 ### Challenge
 
-    function sumAll(arr) {
-      return 1;
-    }
+```javascript
+function sumAll(arr) {
+  return 1;
+}
 
-    sumAll([1, 4]);
+sumAll([1, 4]);
+```
 
 ### Solution
 
-    function sumAll(arr) {
-      let min = arr.reduce((a,b) => a<b ? a : b);
-      let max = arr.reduce((a,b) => a>b ? a : b);
-      let newArr = Array.from(new Array((max + 1) - min), (x, i) => i + min);
-      return newArr.reduce((sum, num) => sum + num);
-    }
+```javascript
+function sumAll(arr) {
+  let min = arr.reduce((a,b) => a<b ? a : b);
+  let max = arr.reduce((a,b) => a>b ? a : b);
+  let newArr = Array.from(new Array((max + 1) - min), (x, i) => i + min);
+  return newArr.reduce((sum, num) => sum + num);
+}
 
-    sumAll([1, 4]));
-    sumAll([5, 10]));
+sumAll([1, 4])); // returns 10
+sumAll([5, 10])); // returns 45 
+```
