@@ -13,7 +13,7 @@ spinalCase('This Is Spinal Tap');
 ### Solution
 
 <details>
-  <summary>Warning! Spoiler ahead...</summary>
+  <summary>Click here for the spoiler...:shushing_face:</summary>
 
 ```javascript
 function spinalCase(str) {
