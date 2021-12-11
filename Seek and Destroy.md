@@ -16,7 +16,7 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ### Solution
 
 <details>
-  <summary>Warning! Spoiler ahead...</summary>
+  <summary>Click here for the spoiler...:shushing_face:</summary>
 
 ```javascript
 function destroyer(arr) {
