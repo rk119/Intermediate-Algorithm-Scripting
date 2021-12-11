@@ -21,7 +21,7 @@ whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: 
 ### Solution
 
 <details>
-  <summary>Warning! Spoiler ahead...</summary>
+  <summary>Click here for the spoiler...:shushing_face:</summary>
 
 ```javascript
 function whatIsInAName(collection, source) {
