@@ -17,6 +17,9 @@ diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 ### Solution
 
+<details>
+  <summary>Warning! Spoiler ahead...</summary>
+
 ``` javascript 
 function diffArray(arr1, arr2) {
 const newArr = arr1.concat(arr2);
@@ -29,3 +32,4 @@ return newArr.filter((element) => {
 diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]); // returns [4]
 diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4]); // returns ["piglet", 4]
 ```
+</details>
