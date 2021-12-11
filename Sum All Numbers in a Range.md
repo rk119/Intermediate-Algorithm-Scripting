@@ -16,6 +16,10 @@ sumAll([1, 4]);
 
 ### Solution
 
+<details>
+  <summary>Warning! Spoiler ahead...</summary>
+  
+  
 ```javascript
 function sumAll(arr) {
   let min = arr.reduce((a,b) => a<b ? a : b);
@@ -23,7 +27,8 @@ function sumAll(arr) {
   let newArr = Array.from(new Array((max + 1) - min), (x, i) => i + min);
   return newArr.reduce((sum, num) => sum + num);
 }
-
+  
 sumAll([1, 4])); // returns 10
 sumAll([5, 10])); // returns 45 
 ```
+</details>
