@@ -11,6 +11,10 @@ spinalCase('This Is Spinal Tap');
 ```
 
 ### Solution
+
+<details>
+  <summary>Warning! Spoiler ahead...</summary>
+
 ```javascript
 function spinalCase(str) {
   return str.trim().replace(/([a-z])([A-Z])|[_|\s]+/g, '$1-$2').toLowerCase();
@@ -22,3 +26,4 @@ spinalCase("AllThe-small Things") // returns all-the-small-things
 
 spinalCase("The_Andy_Griffith_Show") // returns the-andy-griffith-show
 ```
+</details>
