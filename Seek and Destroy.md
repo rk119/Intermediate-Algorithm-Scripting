@@ -15,6 +15,9 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 ```
 ### Solution
 
+<details>
+  <summary>Warning! Spoiler ahead...</summary>
+
 ```javascript
 function destroyer(arr) {
   let args = [...arguments].slice(1)
@@ -24,3 +27,4 @@ function destroyer(arr) {
 destroyer([1, 2, 3, 1, 2, 3], 2, 3); // returns [1,1]
 destroyer(["tree", "hamburger", 53], "tree", 53); // returns ["hamburger"]
 ```
+<details>
