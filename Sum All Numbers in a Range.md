@@ -17,7 +17,7 @@ sumAll([1, 4]);
 ### Solution
 
 <details>
-  <summary>Warning! Spoiler ahead...</summary>
+  <summary>Click here for the spoiler...:shushing_face:</summary>
   
   
 ```javascript
