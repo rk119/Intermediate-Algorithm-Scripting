@@ -18,3 +18,25 @@ function pairElement(str) {
 
 pairElement("GCG");
 ```
+### Solution
+
+<details>
+  <summary>Click here for the spoiler...:shushing_face:</summary>
+  
+  
+```javascript
+function pairElement(str) {
+  let arr = [];
+  for (let i = 0; i<str.length; i++) {
+    str[i] == 'A' ? arr.push([str[i],'T']) : 
+    str[i] == 'T' ? arr.push([str[i],'A']) :
+    str[i] == 'C' ? arr.push([str[i],'G']) : arr.push([str[i],'C']);
+  }
+  return arr;
+}
+
+pairElement("GCG"); // returns [["G", "C"], ["C","G"], ["G", "C"]]
+
+pairElement("CTCTA") // returns [["C","G"],["T","A"],["C","G"],["T","A"],["A","T"]]
+```
+                                </details>
