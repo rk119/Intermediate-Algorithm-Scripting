@@ -18,3 +18,22 @@ function myReplace(str, before, after) {
 
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
 ```
+### Solution
+
+<details>
+  <summary>Click here for the spoiler...🤫</summary>
+  
+  
+```javascript
+function myReplace(str, before, after) {
+  return /[A-Z]/.test(str[str.indexOf(before)]) ? str.replace(before,after.charAt(0).toUpperCase() + after.slice(1)) : 
+  str.replace(before,after.charAt(0).toLowerCase() + after.slice(1));
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped"); // returns A quick brown fox leaped over the lazy dog
+
+myReplace("I think we should look up there", "up", "Down"); // returns I think we should look down there
+
+myReplace("His name is Tom", "Tom", "john") // returns His name is John
+```
+</details>
