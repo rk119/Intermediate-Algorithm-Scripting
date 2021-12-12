@@ -7,8 +7,6 @@ The unique numbers should be sorted by their original order, but the final array
 
 Check the assertion tests for examples.
 
-### Challenge
-
 ```javascript
 function uniteUnique(arr) {
   return arr;
