@@ -14,3 +14,19 @@ function uniteUnique(arr) {
 
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 ```
+### Solution
+
+<details>
+  <summary>Click here for the spoiler...:shushing_face:</summary>
+
+  
+```javascript
+function uniteUnique(...arr) {
+  return [...new Set(arr.flat())];
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]); // returns [1, 3, 2, 5, 4]
+
+uniteUnique([1, 2, 3], [5, 2, 1, 4], [2, 1], [6, 7, 8]) // returns [1, 2, 3, 5, 4, 6, 7, 8]
+```
+</details>
