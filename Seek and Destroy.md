@@ -4,8 +4,6 @@ You will be provided with an initial array (the first argument in the destroyer 
 
 Note: You have to use the arguments object.
 
-### Challenge
-
 ```javascript
 function destroyer(arr) {
   return arr;
