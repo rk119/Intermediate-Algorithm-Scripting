@@ -7,8 +7,6 @@ Pig Latin is a way of altering English Words. The rules are as follows:
 
 Translate the provided string to Pig Latin. Input strings are guaranteed to be English words in all lowercase.
 
-### Challenge
-
 ```javascript
 function translatePigLatin(str) {
   return str;
